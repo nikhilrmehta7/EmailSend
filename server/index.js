@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, '/../react-client/dist')));
 
-
+//OTHER CONSIDERATION
 //you would need to register a domain for the sending e-mail, I could remove the sending e-mail if I want and make it only allow a specific domain
 app.post('/send', (req,res) => {
   console.log('hit send');
@@ -61,14 +61,17 @@ app.post('/send', (req,res) => {
     }
   });
 
-
   //I check if it is a 400 error, if so we know it is a client error and something needs to be changed on the front-end
   //If it is a 500 error, there is a problem with the server, I will try a few more times, then switch to the other service
+
+  //OTHER CONSIDERATIONS
   //I could download the response time npm package and make further decisions based on response time from the server
   //with the 400 i could handle errors on the front end too, letting the client know there is something wrong with the input and to contact the developer
   //i could also distinguish between 400 errors, if it is a matter of user input, or a matter of a missing secret, although hopefully front-end validations clear up user input
   //i could do a set timeout on my tries after a 500 error so I retry the server after 15 ms or so
   //i would like within 1 second to get a response to the user
+
+
   client.transmissions.send(sparkpostObject)
   .then(data => {console.log('Success', data);})
   .catch(err => {
