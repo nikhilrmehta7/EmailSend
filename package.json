@@ -1,0 +1,36 @@
+{
+  "name": "emailprogram",
+  "version": "1.0.0",
+  "description": "email program",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon server/index.js",
+    "react-dev": "webpack -d --watch"
+  },
+  "author": "Nikhil Mehta",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.11.0",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "node-env-file": "^0.1.8",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-validation": "^2.10.9",
+    "sendgrid": "^5.2.2",
+    "sparkpost": "^2.1.2",
+    "webpack": "^3.5.5"
+  }
+}
