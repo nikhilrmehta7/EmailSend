@@ -6,6 +6,7 @@
 #the secrets are stored in a .env file
 #I check if it is a 400 error, if so we know it is a client error and something needs to be changed on the front-end
 #If it is a 500 error, there is a problem with the server, I will try a few more times, then switch to the other service
+#this won't exactly work because I have used the free e-mails and you need to register a domain to send e-mails, however the code structure is correct
 
 
 #OTHER CONSIDERATIONS
