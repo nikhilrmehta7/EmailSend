@@ -10,6 +10,7 @@
 
 
 #OTHER CONSIDERATIONS
+#Could have used methods on the server side to create more modularized code, however this is a simple application as of now
 #There are other validations I could have added, however this is the most basic front-end validation
 #you would need to register a domain for the sending e-mail, I could remove the sending e-mail if I want and make it only allow a specific domain
 #I could download the response time npm package and make further decisions based on response time from the server
